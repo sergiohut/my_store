@@ -75,7 +75,7 @@ const showValue = () => {
             <li>&gt;</li>
             <li><a href="">Ropa</a></li>
             <li>&gt;</li>
-            <li className="current_page"><a  href="">Casual(15 articulos)</a></li>
+            <li className="current_page"><a  href="">Casual</a></li>
           </ul>
           
         </div>}

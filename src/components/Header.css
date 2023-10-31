@@ -181,7 +181,7 @@ height: 30px;
 }
 
 .header{
-    height: 20vh;
+    height: 22vh;
 }
 }
 
@@ -190,7 +190,7 @@ height: 30px;
         top:200px;
     }
     .upper_line input{
-        width: 100%;
+        width: 80%;
     }
     .user_actions{
         position: relative;
@@ -200,6 +200,12 @@ height: 30px;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+    .header{
+        padding: 0 1rem
+    }
+    .second_line{
+    
+    font-size: 12px;}
+    }
 
 
-}
