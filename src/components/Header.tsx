@@ -10,11 +10,11 @@ import { productsData} from "../../data/productsData"
 
 const Header = ({viewCart, setViewCart}: PropsType) => {
   const [name, setName] = useState("");
-const textInput = useRef(null);
+const textInput:any = useRef(null);
 const showValue = () => {
   console.log(textInput);
   //Gracias a la referencia puedo leer el objeto real del DOM y leer su value -> ESTO ES DEL DOM
-  const inputValue = textInput.current!.value;
+  const inputValue = textInput.current.value;
   //Si existe el valor lo seteamos
   if (inputValue) {
     setName(inputValue);
