@@ -1,0 +1,23 @@
+.cartInfo_item {
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5em;
+}
+
+.item_img {
+    min-width: 68px;
+}
+
+.item_select {
+    align-self: flex-start;
+}
+
+.item_button {
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+
+.bold{
+    font-weight:900;
+}
