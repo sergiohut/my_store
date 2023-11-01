@@ -50,4 +50,7 @@ width: 100vw;
     .cartInfo_totals {
     padding: 2rem 0;
     }
+
+    .cartDone h2{
+        font-size: 1rem;
     }
