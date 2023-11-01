@@ -1,4 +1,8 @@
 header{
+    height: 22vh;
+
+}
+header{
     position: relative;
 }
   
@@ -199,9 +203,7 @@ height: 30px;
 
 }
 
-.header{
-    height: 22vh;
-}
+
 }
 
 @media screen and (max-width: 800px){
