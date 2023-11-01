@@ -220,7 +220,8 @@ height: 30px;
         justify-content: flex-start;
     }
     .header{
-        padding: 0 1rem
+        padding: 0 1rem;
+        height: 22vh;
     }
     .second_line{
     
