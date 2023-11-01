@@ -15,7 +15,9 @@ const FixedNav = ({viewCart}: PropsType) => {
     <ul>
       <li><a href="#" onClick={() => {
       const camisetas = productsData.filter((item) => item.category === "Camisetas y polos");
-      setProducts(camisetas); console.log(camisetas)
+      setProducts(camisetas); console.log(camisetas);
+
+
   }}>Camisetas y polos</a></li>
       <li><a href="#" onClick={() => {
       const camisas = productsData.filter((item) => item.category === "Camisas");

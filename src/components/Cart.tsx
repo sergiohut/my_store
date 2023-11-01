@@ -19,7 +19,6 @@ const Cart = () => {
       <img src={done_ilust} />  
       </section>
     : < >
-        <h2>Carrito de la compra: </h2>
         <div className="cartInfo">
           <ul >
           {cart.map(item => {

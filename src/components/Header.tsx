@@ -21,10 +21,8 @@ const showValue = () => {
   }
 };
   const {products, setProducts} = useProducts()
-  const [clicked2, setClicked2] = useState(false);
-  const handleClick2 = () => {
-    setClicked2(!clicked2);
-  };
+
+
 
   const sortedCheaper = (value:String) => {
     const orderProducts = products.sort((a, b) => (a.price > b.price ? 1 : -1));
@@ -68,7 +66,7 @@ const showValue = () => {
         <FixedNav viewCart={viewCart} setViewCart={setViewCart}/>
       <section className="central_header">
         <h1>My Store</h1>
-        {!viewCart&& 
+        {!viewCart? 
         <div className="link_path">
           <ul>
             <li><a href="">Hombre</a></li>
@@ -78,7 +76,8 @@ const showValue = () => {
             <li className="current_page"><a  href="">Casual</a></li>
           </ul>
           
-        </div>}
+        </div>:
+        <h2> Carrito de la compra: </h2>}
       </section>
       
 
@@ -90,23 +89,21 @@ const showValue = () => {
 
               <input type="text"   placeholder="Buscar"  ref={textInput} onChange={(ev) => {filterFunction(ev.target.value), showValue()}}/>
           </div>
-            <div onClick={handleClick2}>
+            <div className="order">
               Ordenar por
-              <ul className={`filterBar__filter ${clicked2 ? 'active' : ''}`}>
+              <ul className={`filterBar__filter }`}>
                 <li>
-      
+                  <input id="Cheaper" onClick={() => {sortedCheaper(name)}} type="radio" value="Cheaper" name="order"/>
+                  <label htmlFor="Cheaper"> Precio de menor a mayor</label>
                 </li>
                 <li>
-                  <input id="Grandes_viajes" onClick={() => {sortedCheaper(name)}} type="checkbox" value="Grandes viajes" />
-                  <label htmlFor="Grandes_viajes"> Precio de menor a mayor</label>
+                  <input id="Expensive" onClick={() => {sortedExpensive(name)}} type="radio" name="order" value="Expensive" />
+                  <label htmlFor="Expensive"> Precio de mayor a menor</label>
                 </li>
                 <li>
-                  <input id="Grandes_viajes" onClick={() => {sortedExpensive(name)}} type="checkbox" value="Grandes viajes" />
-                  <label htmlFor="Grandes_viajes"> Precio de mayor a menor</label>
-                </li>
-                <li>
-                  <input id="Grandes_viajes" onClick={() => {sortedRecent(name)}}type="checkbox" value="Grandes viajes" />
-                  <label htmlFor="Grandes_viajes">Más recientes</label>
+                  <input id="Recent" onClick={() => {sortedRecent(name)}}type="radio" 
+                  name="order" value="Recent" />
+                  <label htmlFor="Recent">Más recientes</label>
                 </li>
               </ul>
             </div>

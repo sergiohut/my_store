@@ -1,3 +1,4 @@
+
 .pointer{
     cursor: pointer;
 }
@@ -36,11 +37,17 @@
         display: none;
     }
     .carrito{
-        background-color: rgba(212, 243, 101, 0.648);;
-        padding: 0.5rem;
+        background-color: rgba(212, 243, 101, 0.648);
+        padding: 0.5rem 1rem;
+        border-radius: 50%;
+        border: 1px solid black;
     }
 
     #bottone1{
-        padding: 0.5rem;
+        border-radius: 50px;
+        border: 1px solid black;
+        padding: 0.5rem 1rem;
+        width: 80vw;
+     
     }
     }

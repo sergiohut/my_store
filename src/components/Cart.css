@@ -3,10 +3,7 @@
     flex-direction: column;
     }
 
-.cart>h2{
-    text-decoration: underline;
-    color: lightgray
-}
+
 
 .cartInfo{
     display: flex;
