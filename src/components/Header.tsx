@@ -21,7 +21,9 @@ const showValue = () => {
   }
 };
   const {products, setProducts} = useProducts()
-
+  const compareNumbers = (a:any, b:any) => {
+    return a.sku.slice(4) - b.sku.slice(4);
+  }
 
 
   const sortedCheaper = (value:String) => {
@@ -43,7 +45,7 @@ const showValue = () => {
   };
 
   const sortedRecent = (value:String) => {
-    const orderProducts = products.sort((a, b) => (a.sku > b.sku ? 1 : -1));
+    const orderProducts = products.sort((compareNumbers));
     const orderedProducts = orderProducts.filter((item) => {
       return item.name.toLowerCase().includes(value.toLowerCase()) ||
       item.category.toLowerCase().includes(value.toLowerCase());
