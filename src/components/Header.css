@@ -1,5 +1,5 @@
 header{
-    height: 22vh;
+    height: 18vh;
 
 }
 header{
@@ -157,6 +157,7 @@ header > .central_header > .link_path li:first-child, header > .central_header >
 .order {
     position: relative;
     width: 100%;
+    padding-bottom: 1rem;
 
 }
 .order:hover .filterBar__filter{
