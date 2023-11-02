@@ -6,6 +6,12 @@
     padding: 0.5rem 1rem;
 ;}
 
+.carrito:hover{
+    box-shadow: 7px 5px 56px -14px #C3D900;
+    background-color: #C3D900;
+    text-decoration: none;
+}
+
 .pointer{
     cursor: pointer;
 }

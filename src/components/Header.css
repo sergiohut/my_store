@@ -1,5 +1,5 @@
 header{
-    height: 18vh;
+    height: 20vh;
 
 }
 header{
@@ -209,7 +209,8 @@ height: 30px;
 
 @media screen and (max-width: 800px){
     .nav_bar{
-        top:200px;
+        top:230px;
+        left:30px;
     }
     .upper_line input{
         width: 100%;
@@ -224,7 +225,7 @@ height: 30px;
     }
     .header{
         padding: 0 1rem;
-        height: 22vh;
+        height: 24vh;
     }
     .second_line{
     
